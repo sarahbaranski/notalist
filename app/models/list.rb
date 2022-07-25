@@ -1,3 +1,3 @@
 class List < ApplicationRecord
-  belongs_to :users through :users_list
+  has_many :users, through: :users_list
 end
